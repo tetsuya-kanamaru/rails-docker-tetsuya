@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout:
           path: ~/rails-docker-tetsuya
-        ruby/install-deps
+      - ruby/install-deps
 
   test:
     docker:
