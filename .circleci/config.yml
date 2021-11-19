@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout:
           path: ~/rails-docker-tetsuya
-      - ruby/install-deps
+        ruby/install-deps
 
   test:
     docker:
@@ -28,7 +28,7 @@ jobs:
     working_directory: ~/rails-docker-tetsuya/src
     steps:
       - checkout:
-          path: ~/rails-docker-tetsuya
+        path: ~/rails-docker-tetsuya
       - ruby/install-deps
       - run:
           name: Database setup
@@ -44,4 +44,4 @@ workflows:
       - build
       - test:
           requires:
-            - build
+            -build
