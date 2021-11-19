@@ -34,8 +34,8 @@ jobs:
           name: Database setup
           command: bundle exec rails db:migrate
       - run:
-        name: test
-        command: bundle exec rake test
+          name: test
+          command: bundle exec rake test
 
 workflows:
   version: 2
